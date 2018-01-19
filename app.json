@@ -1,0 +1,42 @@
+{
+    "pages":[
+        "pages/index/index",                
+        "pages/goodsDetails/goodsDetails",  
+        "pages/addAddress/addAddress",
+        "pages/shopList/shopList",          
+        "pages/shopCart/shopCart",
+        "pages/my/my",                    
+        "pages/logs/logs"
+    ],
+    "window":{
+        "navigationBarTitleText": "💓魚芄酱🍡の包包小店",   
+        "backgroundTextStyle":"light",                  
+        "navigationBarBackgroundColor": "#fff",      
+        "navigationBarTextStyle":"black",               
+        "backgroundColor": "#f0edf1"            
+    },
+    "tabBar": {    
+        "backgroundColor": "#fff",
+        "selectedColor": "#e85654",
+        "list": [           
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "/img/home-off.png",
+                "selectedIconPath": "/img/home-on.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/shopCart/shopCart",
+                "iconPath": "/img/cart-off.png",
+                "selectedIconPath": "/img/cart-on.png",
+                "text": "购物车"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "iconPath": "/img/my-off.png",
+                "selectedIconPath": "/img/my-on.png",            
+                "text": "我的"
+            }
+        ]
+    }
+}

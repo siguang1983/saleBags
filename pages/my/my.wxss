@@ -1,0 +1,18 @@
+.my-top {
+    height: 209rpx;
+    background-color: #e85654;
+    flex: 1;
+    width: 100%;
+}
+
+.mt20 {
+    margin-top: 30rpx;
+}
+
+.btn-bind-phone {
+    width: 80%;
+}
+
+.no-bor {
+    border-bottom: none;
+}

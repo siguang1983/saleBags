@@ -1,0 +1,160 @@
+<view class="container">
+     <view class="swiper-container">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-box">
+            <block wx:for="{{banners}}">
+                <swiper-item class="swiper-item">
+                    <image src="{{item}}" class="slide-image" width="355" height="150"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    <view class="goods-describe">
+        <view class="goods-title">补差价</view>
+        <view class="goods-pirce-box">
+            <view class="goods-pirce price-val">¥10元</view>
+            <view class="goods-pirce">购买10次</view>
+            <view class="goods-pirce">共收到6次好评</view>
+        </view>
+    </view>
+
+    <view class="my-tab mt30">
+        <view class="text-left">当前积分</view>
+        <view class="text-right">></view>
+    </view>
+
+    <view class="goods-container mt30">
+        <view class="bobo-title">商品介绍</view>
+        <view class="ditali-content">
+            商品编号 : 91326475尺寸 : 其它成品产地 : 中国材料产地 : 中国填充物材质 : 其它长宽高 : 1000-1500*25性别 : 男款式 : 其它使用方式 : 腰饰材质 : 剖层牛皮移膜革(俗称二层牛皮)流行元素 : 其它风格 : 其它适合季节 : 四季开发季节 : 2017春夏季功能属性 : 配饰大牌同款 : 其它打开方式 : 针扣式内部结构 : 其它图案 : 几何图场合 : 其它大小 : 其它
+        </view>
+    </view>
+
+    <view class="goods-container mt30">
+        <view class="bobo-title">大家评价（6）</view>
+        <view class="evaluate-box">
+            <view class="evaluate-photo">
+                <view class="user-photo">
+                    <image src="/img/head-1.jpg"></image>
+                </view>
+                <view class="evaluate-type">
+                    好评
+                </view>
+            </view>
+            <view class="evaluate-info">
+                <view class="evaluate-text">系统默认好评</view>
+                <view class="evaluate-date">2017-09-27 21:20:00 规格:100ml</view>
+            </view>
+        </view>
+        <view class="evaluate-box">
+            <view class="evaluate-photo">
+                <view class="user-photo">
+                    <image src="/img/head-2.jpg"></image>
+                </view>
+                <view class="evaluate-type">
+                    好评
+                </view>
+            </view>
+            <view class="evaluate-info">
+                <view class="evaluate-text">系统默认好评</view>
+                <view class="evaluate-date">2017-09-27 21:20:00 规格:100ml</view>
+            </view>
+        </view>
+        <view class="evaluate-box">
+            <view class="evaluate-photo">
+                <view class="user-photo">
+                    <image src="/img/head-3.jpg"></image>
+                </view>
+                <view class="evaluate-type">
+                    好评
+                </view>
+            </view>
+            <view class="evaluate-info">
+                <view class="evaluate-text">系统默认好评</view>
+                <view class="evaluate-date">2017-09-27 21:20:00 规格:100ml</view>
+            </view>
+        </view>
+        <view class="evaluate-box">
+            <view class="evaluate-photo">
+                <view class="user-photo">
+                    <image src="/img/head-1.jpg"></image>
+                </view>
+                <view class="evaluate-type">
+                    好评
+                </view>
+            </view>
+            <view class="evaluate-info">
+                <view class="evaluate-text">系统默认好评</view>
+                <view class="evaluate-date">2017-09-27 21:20:00 规格:100ml</view>
+            </view>
+        </view>
+        <view class="evaluate-box">
+            <view class="evaluate-photo">
+                <view class="user-photo">
+                    <image src="/img/head-3.jpg"></image>
+                </view>
+                <view class="evaluate-type">
+                    好评
+                </view>
+            </view>
+            <view class="evaluate-info">
+                <view class="evaluate-text">系统默认好评</view>
+                <view class="evaluate-date">2017-09-27 21:20:00 规格:100ml</view>
+            </view>
+        </view>
+    </view> 
+
+    <!-- 底部条 -->
+    <view class="footer-box">
+        <view class="kf">
+            <contact-button type="default-light" size="20" session-from="weapp"></contact-button>
+            客服
+        </view>
+        <view class="shop-cart">         
+            <view class="shop-cart-num">(10)</view>
+            购物车
+        </view>
+        <view class="addcart-btn" bindtap="tapAddShopCart">加入购物车</view>
+        <view class="buy-btn" bindtap="tapBuy">立即购买</view>
+    </view>
+
+    <!-- 立即购买 -->
+    <view class="buy-box {{hideShopPopup ? 'show': 'hide'}}">
+        <view class="instantly-buy">
+            <view class="buy-info">
+                <view class="close-panel" bindtap="closeBuyPanel">
+                    <image src="/img/close-ico.jpg" width="100%" height="100%" />                    
+                </view>
+                <view class="buy-goods-box">
+                    <view class="buy-goods-logo">
+                        <image src="/img/goods-logo.jpg" width="120" height="120" />
+                    </view>
+                    <view class="buy-goods-right">
+                        <view class="buy-title">[mbaobao]撞色蝴蝶结系列 单肩斜挎</view>
+                        <view class="buy-price">¥540元</view>
+                    </view>
+                    <view class="buy-box-close"></view>
+                </view>
+                <view class="buy-goods-box portrait">
+                    <view class="spec-title">规格</view>
+                    <view class="buy-btns">
+                        <view class="buy-spec-btn {{item === selectSpec ? 'buy-spec-btn-ative' : ''}}"
+                            wx:for="{{specData}}" 
+                            bindtap="clickSpec"
+                            data-spcenum="{{index}}">{{item}}</view>
+                    </view>
+                </view>
+                <view class="buy-goods-box between">
+                    <view class="amount-title">购买数量</view>
+                    <view class="amount-count">
+                        <view class="sub-btn {{goodsNum <= 0 ? 'sub-btn-none' : ''}}" bindtap="subGoodsCount">-</view>
+                        <view class="num-btn"><input type="number" class="count-inp" value="{{goodsNum}}"/></view>
+                        <view class="add-btn" bindtap="addGoodsCount">+</view>
+                    </view>
+                </view>
+            </view>
+            <view class="instantly-buy-btn" wx-if="{{shopType == 'buy'}}" bindtap="clickBuy">立即购买</view>
+            <view class="instantly-buy-btn" wx-if="{{shopType == 'addShopCart'}}" bindtap="addGoodsCart">加入购物车</view>
+        </view>
+    </view>
+</view>

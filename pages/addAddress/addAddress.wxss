@@ -1,0 +1,32 @@
+.addres-box {
+    display: flex;
+    padding: 20rpx;
+    border-bottom: 1px #c9c9c9 solid;
+    background-color: #fff;
+}
+
+.addres-title {
+    width: 150rpx;
+    padding: 20rpx 0;
+    font-size: 26rpx;
+}
+
+.add-inp {
+    width: 100%;
+    padding-top: 18rpx;
+    font-size: 26rpx;
+}
+.add-inp-select{
+    padding-right: 50rpx;
+    padding-top: 24rpx;
+    display: inline-block;
+}
+.save-btn, .clear-btn{
+    margin: 20rpx;
+    height: 80rpx;
+}
+.save-btn {
+    border: 1px #b85561 solid;
+    background-color: #e74342!important;
+    color:#fff!important;
+}

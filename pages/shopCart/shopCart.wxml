@@ -1,0 +1,59 @@
+<view class="container pt30">
+    <view class="my-tab">
+        <view class="text-left flex">
+            <view class="address">
+                <image src="/img/address.jpg" />
+            </view>
+            <view class="address-title space60" bindtap="addDeliveryAddress">新增收货地址</view>            
+        </view>
+        <view class="text-right space60">></view>
+    </view>
+
+    <!-- 商品列表 -->
+    <view class="goods-list mt30">
+        <view class="goods-title">商品列表</view>
+        <view class="goods-content">
+            <view class="goods-photo">
+                <image src='/img/goods-logo.jpg' />
+            </view>
+            <view class="goods-info">
+                <view class="goods-text between">
+                    <view>补差价</view>
+                    <view>¥10元</view>
+                </view>
+                 <view class="goods-text between abs">
+                    <view>规格: 100ml</view>
+                    <view>x1</view>
+                </view> 
+            </view>
+        </view>
+        <view class="goods-content">
+            <view class="goods-photo">
+                <image src='/img/goods-logo.jpg' />
+            </view>
+            <view class="goods-info">
+                <view class="goods-text between">
+                    <view>补差价</view>
+                    <view>¥10元</view>
+                </view>
+                 <view class="goods-text between abs">
+                    <view>规格: 100ml</view>
+                    <view>x1</view>
+                </view> 
+            </view>
+        </view>
+    </view>
+
+    <view class="box-sty1 mt30">
+        <view class='distribution between'>
+            <view class="dis-left">配送方式</view>
+            <view class="dis-right">包邮</view>
+        </view>
+        <view class='distribution bor-bottom-none'>
+            <view class="dis-left">备注</view>
+            <view>包邮</view>
+        </view>
+    </view>
+
+    
+</view>

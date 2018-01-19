@@ -1,0 +1,109 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="swiper-container">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-box">
+            <block wx:for="{{banners}}">
+                <swiper-item  bindtap="getGoodsDetail">
+                    <image src="{{item}}" class="slide-image" width="355" height="150"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    <!-- 公告 -->
+    <view class="notice mt30">
+        <view class="notice-title">公告：</view>
+        <view>潮流双肩包 | 甜美韩风 | {{message}}</view>            
+    </view> 
+
+    <!-- 优惠商品 -->
+    <view class="coupons-container mt30">
+        <scroll-view scroll-x="true" class="coupons-scroll">
+            <view class="coupons-item">
+                <view class="size30">¥10元</view>
+                <view>万圣节大优惠</view>
+                <view>满 20 元使用</view>
+                <view>领取 10 天内有效</view>
+            </view>
+            <view class="coupons-item">
+                <view class="size30">¥10元</view>
+                <view>万圣节大优惠</view>
+                <view>满 20 元使用</view>
+                <view>领取 10 天内有效</view>
+            </view>
+            <view class="coupons-item">
+                <view class="size30">¥10元</view>
+                <view>万圣节大优惠</view>
+                <view>满 20 元使用</view>
+                <view>领取 10 天内有效</view>
+            </view>
+            <view class="coupons-item">
+                <view class="size30">¥10元</view>
+                <view>万圣节大优惠</view>
+                <view>满 20 元使用</view>
+                <view>领取 10 天内有效</view>
+            </view>
+        </scroll-view>
+    </view>   
+
+    <!-- 商品列表 -->
+    <view class="goods-container">
+
+        <view class="goods-item" bindtap="getGoodsDetail">
+            <view class="goods-img">
+                <image src="/img/WechatIMG3.jpg" class="slide-image" width="355" height="150"/>
+            </view>
+            <view class="goods-describe">[阿尔法·阿蒂斯特]新优雅系列手提单肩斜</view>
+            <view class="goods-price">¥3000元</view>
+        </view>
+        <view class="goods-item" bindtap="getGoodsDetail">
+            <view class="goods-img">
+                <image src="/img/WechatIMG1.jpg" class="slide-image" width="355" height="150"/>
+            </view>
+            <view class="goods-describe">[阿尔法·阿蒂斯特]新优雅系列手提单肩斜</view>
+            <view class="goods-price">¥3000元</view>
+        </view>
+        <view class="goods-item" bindtap="getGoodsDetail">
+            <view class="goods-img">
+                <image src="/img/WechatIMG15.jpg" class="slide-image" width="355" height="150"/>
+            </view>
+            <view class="goods-describe">[阿尔法·阿蒂斯特]新优雅系列手提单肩斜</view>
+            <view class="goods-price">¥3000元</view>
+        </view>
+        <view class="goods-item" bindtap="getGoodsDetail">
+            <view class="goods-img">
+                <image src="/img/WechatIMG2.jpg" class="slide-image" width="355" height="150"/>
+            </view>
+            <view class="goods-describe">[阿尔法·阿蒂斯特]新优雅系列手提单肩斜</view>
+            <view class="goods-price">¥3000元</view>
+        </view>
+        <view class="goods-item" bindtap="getGoodsDetail">
+            <view class="goods-img">
+                <image src="/img/WechatIMG3.jpg" class="slide-image" width="355" height="150"/>
+            </view>
+            <view class="goods-describe">[阿尔法·阿蒂斯特]新优雅系列手提单肩斜</view>
+            <view class="goods-price">¥3000元</view>
+        </view>
+        <view class="goods-item" bindtap="getGoodsDetail">
+            <view class="goods-img">
+                <image src="/img/WechatIMG1.jpg" class="slide-image" width="355" height="150"/>
+            </view>
+            <view class="goods-describe">[阿尔法·阿蒂斯特]新优雅系列手提单肩斜</view>
+            <view class="goods-price">¥3000元</view>
+        </view>
+        <view class="goods-item" bindtap="getGoodsDetail">
+            <view class="goods-img">
+                <image src="/img/WechatIMG14.jpg" class="slide-image" width="355" height="150"/>
+            </view>
+            <view class="goods-describe">[阿尔法·阿蒂斯特]新优雅系列手提单肩斜</view>
+            <view class="goods-price">¥3000元</view>
+        </view>
+        <view class="goods-item" bindtap="getGoodsDetail">
+            <view class="goods-img">
+                <image src="/img/WechatIMG16.jpg" class="slide-image" width="355" height="150"/>
+            </view>
+            <view class="goods-describe">[阿尔法·阿蒂斯特]新优雅系列手提单肩斜</view>
+            <view class="goods-price">¥3000元</view>
+        </view>
+    </view> 
+</view>

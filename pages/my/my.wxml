@@ -1,0 +1,32 @@
+<view class="container">
+    <view class="my-top"></view>
+
+    <view class="my-tab mt20">
+        <view class="text-left">可用余额0元，冻结金额0元</view>
+    </view>
+    <view class="my-tab">
+        <view class="text-left">当前积分</view>
+        <view class="text-right">></view>
+    </view>
+    <view class="my-tab">
+        <view class="text-left">我的订单</view>
+        <view class="text-right">></view>
+    </view>
+    <view class="my-tab">
+        <view class="text-left">我的收货地址</view>
+        <view class="text-right">></view>
+    </view>
+    <view class="my-tab">
+        <view class="text-left">我的优惠劵</view>
+        <view class="text-right">></view>
+    </view>
+
+    <view class="my-tab">
+        <button type="default" size="default" plain="{{plain}}" hover-class="other-button-hover" class="btn-bind-phone"> 绑定手机号码 </button>
+    </view>
+
+    <view class="my-tab mt20 no-bor">
+        <view class="text-left">关于我们</view>
+        <view class="text-right">></view>
+    </view>
+</view>

@@ -1,0 +1,68 @@
+/**app.wxss**/
+.container {
+    font-size: 24rpx;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #f0edf1;
+}
+
+/* 文字 */
+.size30 {
+    font-size: 30rpx;
+    padding: 5px 0;
+}
+
+/* 边距 */
+.mt30 {
+    margin-top: 20rpx;
+}
+.pt30 {
+    padding-top: 30rpx;
+}
+
+/* 行间距 */
+.space60 {
+    line-height: 60rpx;
+}
+
+.my-tab {
+    padding: 36rpx 0;
+    border-bottom: 1px #e9e9e9 solid;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-left {
+    margin-left: 20rpx;
+    font-size: 28rpx;
+}
+
+.text-right {
+    margin-right: 30rpx;
+    font-size: 28rpx;
+}
+
+.bobo-title {
+    padding: 30rpx 20rpx 20rpx;
+    font-size: 26rpx;
+}
+
+
+.show {
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+.portrait {
+    flex-direction: column;
+}
+.between {
+    justify-content: space-between;
+}
+.bor-bottom-none {
+    border-bottom: 0!important;
+}

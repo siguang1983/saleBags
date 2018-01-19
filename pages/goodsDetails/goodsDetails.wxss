@@ -1,0 +1,290 @@
+.swiper-container, .swiper-box, .swiper-container .swiper-item {
+    height: 500rpx;
+}
+
+.swiper-container .swiper-item image {
+    height: 100%;
+    width: 100%;
+}
+
+.goods-describe {
+    background-color: #fff;
+}
+
+.goods-title {
+    padding: 30rpx 20rpx 10rpx;
+    font-size: 28rpx;
+}
+
+.goods-pirce-box {
+    padding: 10rpx 20rpx 20rpx;
+    display: flex;
+}
+
+.goods-pirce {
+    flex: 1;
+    color: #878787;
+}
+
+.price-val {
+    color: red;
+    font-size: 26rpx;
+}
+
+.goods-container {
+    padding-bottom: 120rpx;
+    background-color: #fff;
+}
+
+.ditali-content {
+    padding: 15rpx 20rpx;
+    color: #878787;
+    line-height: 40rpx;
+}
+
+.evaluate-box {
+    display: flex;
+}
+
+.evaluate-photo {
+    width: 100rpx;
+    padding: 25rpx 28rpx 0;
+}
+
+.user-photo {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.user-photo image {
+    width: 100%;
+    height: 100%;
+}
+
+.evaluate-info {
+    flex: 1;
+    margin-right: 20rpx;
+    padding: 10rpx 0;
+    border-bottom: 1px #eee solid;
+}
+
+.evaluate-text {
+    padding: 10rpx 0;
+    line-height: 40rpx;
+}
+
+.evaluate-date {
+    color: #878787;
+}
+.evaluate-type { 
+    padding-top: 20rpx;
+    text-align: center;
+}
+
+
+
+/* 底部工具菜单 */
+.footer-box {
+    height: 100rpx;
+    background-color:#fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 900;
+    box-shadow: 0 0 8rpx 0 rgba(111, 111, 111, 1);
+    display: flex;
+}
+.kf{
+    color: #167a13;
+    font-size: 26rxp;
+    width: 120rpx;
+    height: 100%;
+    padding-top: 46rpx;
+    background:url("https://cdn.it120.cc/images/weappshop/kefu.png") no-repeat center 0rpx;
+    background-size: 60rpx auto;
+    flex: 1;
+}
+
+.shop-cart{
+    flex: 1;
+    position: relative;
+    width: 120rpx;
+    height: 100%;
+    text-align: center;
+    padding-top: 57rpx;
+    font-size: 26rxp;   
+    color: #d7d5dc;
+    background:url("https://cdn.it120.cc/images/weappshop/cart.png") no-repeat center 4rpx;
+    background-size: 56rpx auto;
+}
+
+.shop-cart-num {
+    position: absolute;
+    display: inline;
+    color:#e64340;
+    top: 7rpx;
+    left: 70rpx;
+}
+
+
+.addcart-btn{
+    background-color: #ff6851;
+}
+.buy-btn{
+    background-color: #e74342;
+    
+}
+.addcart-btn, .buy-btn{
+    flex: 2;
+    color: #fff;
+    text-align: center;
+    font-size: 32rpx;
+    line-height: 100rpx;
+}
+
+
+/* 立即购买  */
+.buy-box {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.instantly-buy{
+    width: 100%; 
+    background-color: #fff;
+    position: absolute; bottom: 0;
+    left: 0;
+    z-index: 1001;
+}
+
+.buy-btns {
+    padding: 0 20rpx;
+    box-sizing: content-box;
+}
+.buy-spec-btn {
+    border: 1px #dcdcdc solid;
+    border-radius: 4rpx;
+    padding: 15rpx 20rpx;
+    margin-right: 10rpx;
+}
+.buy-spec-btn-ative {
+    background-color: #fde3cf;
+}
+
+
+.buy-btns {
+    display: flex;
+}
+.spec-title { 
+    padding: 0rpx 20rpx 10rpx;
+    font-size: 26rpx;
+    
+}
+.amount-title { 
+    padding: 20rpx;
+    font-size: 26rpx;
+}
+.amount-count {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20rpx;
+    width: 252rpx;
+    height: 66rpx;
+    line-height: 66rpx;
+}
+.sub-btn, .add-btn {
+    width: 83rpx;
+    height: 66rpx;
+    border: 1px #ebebeb solid;
+    text-align: center;
+    flex: 1;
+}
+.sub-btn-none, .add-btn-none {
+    color: #e9e9e9;
+}
+.sub-btn {
+    border-right: none;
+}
+.add-btn {
+    border-left: none;
+}
+.sub-btn-action, .add-btn-action {
+    background-color: #333;
+}
+.num-btn {
+    height: 66rpx;
+    border: 1px #ebebeb solid;
+}
+.count-inp {
+    width: 83rpx;
+    height: 66rpx;
+    text-align: center;
+}
+.buy-info {
+    position: relative;
+    background-color: #fff;
+}
+.close-panel { 
+    width: 35rpx;
+    height: 35rpx; 
+    position: absolute;
+    right: 30rpx;
+    top: 18rpx;
+}
+.close-panel image {
+    width: 100%;
+    height: 100%;
+}
+.buy-goods-box{
+    padding: 24rpx 0;
+    border-bottom: 1rpx #f1f1f1 solid;
+    display: flex;
+    flex-direction: row;
+}
+.buy-goods-logo{
+    width: 120rpx;
+    height: 120rpx;
+    margin: 0 28rpx 15rpx;
+}
+.buy-goods-logo image{
+    width: 100%;
+    height: 100%;
+}
+.buy-goods-right{
+    flex: 1;
+}
+.buy-title {
+    padding: 20rpx 20rpx 0 0;
+    line-height: 36rpx;
+    font-size: 28rpx;
+}
+.buy-price {
+    font-size: 26rpx;
+    color: red;
+    padding-top: 18rpx
+}
+
+.amount-title {
+    float: left;
+}
+.amount-count {
+     float: right;
+}
+
+.instantly-buy-btn {
+    width: 100%;
+    height: 88rpx;
+    display: inline-block;
+    background-color: #e74342;
+    text-align: center;
+    line-height: 88rpx;
+    font-size: 34rpx;
+    color: #fff;
+}
+

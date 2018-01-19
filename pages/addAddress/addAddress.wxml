@@ -1,0 +1,53 @@
+<view class="container">
+
+    <view class="addres-box">
+        <view class="addres-title">联系人</view>
+        <view class="addres-inp">
+            <input placeholder="姓名" class="add-inp" auto-focus />
+        </view>
+    </view>
+    <view class="addres-box">
+        <view class="addres-title">手机号码</view>
+        <view class="addres-inp">
+            <input placeholder="11位手机号码" class="add-inp" auto-focus />
+        </view>
+    </view>
+    <view class="addres-box">
+        <view class="addres-title">选择地区</view>
+        <view class="addres-inp">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="add-inp-select">
+                <view class="picker">
+                    {{selProvince}}
+                </view>
+            </picker>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="add-inp-select">
+                <view class="picker">
+                    {{selProvince}}
+                </view>
+            </picker>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="add-inp-select">
+                <view class="picker">
+                    {{selProvince}}
+                </view>
+            </picker>
+        </view>
+    </view>
+    <view class="addres-box">
+        <view class="addres-title">详细地址</view>
+        <view class="addres-inp">
+            <input placeholder="街道门牌信息" class="add-inp" auto-focus />
+        </view>
+    </view>
+    <view class="addres-box">
+        <view class="addres-title">邮政编号</view>
+        <view class="addres-inp">
+            <input placeholder="" class="add-inp" auto-focus />
+        </view>
+    </view>
+
+    <view>
+        <button type="default" bindtap="default" class="save-btn" hover-class="other-button-hover"> 保存 </button>
+        <button type="default" bindtap="default" class="clear-btn" hover-class="other-button-hover"> 取消 </button>
+    </view>
+
+</view>
